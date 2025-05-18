@@ -62,8 +62,7 @@ function App() {
           <h4>To-Do Tasks</h4>
           <ul className="list-group">
             {todoTasks.map((task) => (
-              <li key={task.id}className="list-group-item d-flex justify-content-between align-items-center">
-                <span>{task.text}</span>
+              <li key={task.id}className="list-group-item d-flex justify-content-between align-items-center"> {task.text}
                 <div>
                   <button className="btn btn-success btn-sm me-2" onClick={() => markDone(task.id)}>Mark Done</button>
                   <button className="btn btn-danger btn-sm" onClick={() => deleteTask(task.id)}>Delete</button>
@@ -81,8 +80,7 @@ function App() {
           <h4>Completed Tasks</h4>
           <ul className="list-group">
             {completedTasks.map((task) => (
-              <li key={task.id} className="list-group-item d-flex justify-content-between align-items-center text-muted text-decoration-line-through">
-                <span>{task.text}</span>
+              <li key={task.id} className="list-group-item d-flex justify-content-between align-items-center text-muted text-decoration-line-through">{task.text}
                 <div>
                   <button
                     className="btn btn-primary btn-sm me-2"onClick={() => markUndone(task.id)}>Mark Undone</button>
