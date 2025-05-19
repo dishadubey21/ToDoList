@@ -1,0 +1,14 @@
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container{
+  background-image: url('/project1/ToDoList/src/assets/todo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
